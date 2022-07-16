@@ -7,5 +7,12 @@ public class BooleanOperators {
         b=false;
         r = a ^ b;
         System.out.println(r);
+        int intA,intB;
+        intA = 1_000;
+        intB = 2_000;
+        System.out.println(r+" fuck "+intA);
+        int inc;
+        inc = (intA=intA+1) + ++intB;
+        System.out.println(inc);
     }
 }
