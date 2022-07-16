@@ -13,5 +13,9 @@ public class TypeOfLiteral {
         System.out.println(i);
         boolean boo = Integer.bitCount(Math.abs(value)) == 1;
         System.out.println("Integer.bitCount: " + boo);
+        System.out.println("A"+('\t'+'\u0003'));
+        System.out.println('A'+'1'+'2');
+        System.out.println("A"+12);
+        System.out.println('A'+"12");
     }
 }
