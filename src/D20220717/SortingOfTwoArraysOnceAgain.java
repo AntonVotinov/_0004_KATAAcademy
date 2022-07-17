@@ -6,7 +6,7 @@ public class SortingOfTwoArraysOnceAgain {
     public static void main(String[] args) {
     int[] a,b,c;
     a = new int[] {0,2,2};
-    b = new int[] {1,3,9};
+    b = new int[] {1,3};
     int i = 0;
     int j = 0;
     int k;

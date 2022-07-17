@@ -7,7 +7,7 @@ public class CatDog {
         Dog.catchCat();
     }
     public static class Cat {
-        public void sayHello() {
+        public static void sayHello() {
             System.out.println("Мяу!");
         }
     }
@@ -16,10 +16,10 @@ public class CatDog {
         public void sayHello() {
             System.out.println("Гав!");
         }
-        public void catchCat() {
+        public static void catchCat(Cat cat) {
             System.out.println("Кошка поймана");
-            Dog.sayHello();
-            Cat.sayHello();
+            this.sayHello();
+            cat.sayHello();
         }
     }
 }
