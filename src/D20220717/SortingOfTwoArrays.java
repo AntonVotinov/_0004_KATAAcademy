@@ -12,17 +12,13 @@ public class SortingOfTwoArrays {
 
         for (int x = 0; x < (a1.length + a2.length); x++) {
             if (i > a1.length - 1) {
-                finalArray[x] = a2[j];
-                j++;
+                finalArray[x] = a2[j++];
             } else if (j > a2.length - 1) {
-                finalArray[x] = a1[i];
-                i++;
+                finalArray[x] = a1[i++];
             } else if (a1[i] < a2[j]) {
-                finalArray[x] = a1[i];
-                i++;
+                finalArray[x] = a1[i++];
             } else {
-                finalArray[x] = a2[j];
-                j++;
+                finalArray[x] = a2[j++];
             }
         }
 
