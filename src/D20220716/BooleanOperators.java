@@ -1,4 +1,4 @@
-package D20220715;
+package D20220716;
 
 public class BooleanOperators {
     public static void main(String[] args) {
