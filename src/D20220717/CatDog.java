@@ -7,19 +7,19 @@ public class CatDog {
         Dog.catchCat();
     }
     public static class Cat {
-        public void sayHello() {
+        public static void sayHello() {
             System.out.println("Мяу!");
         }
     }
 
     public static class Dog {
-        public void sayHello() {
+        public static void sayHello() {
             System.out.println("Гав!");
         }
-        public void catchCat(Cat cat) {
+        public static void catchCat() {
             System.out.println("Кошка поймана");
-            this.sayHello();
-            cat.sayHello();
+            Dog.sayHello();
+            Cat.sayHello();
         }
     }
 }
