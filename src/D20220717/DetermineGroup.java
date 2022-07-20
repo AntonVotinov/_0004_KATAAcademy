@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class DetermineGroup {
     public static void main(String[] args) {
-
+        int i = 0;
         Scanner sc = new Scanner(System.in);
 
         while (true) {
@@ -12,6 +12,11 @@ public class DetermineGroup {
             int age = sc.nextInt();
 
             System.out.println(determineGroup(age));
+            i ++;
+
+            if (i > 10) {
+                break;
+            }
         }
 
     }
