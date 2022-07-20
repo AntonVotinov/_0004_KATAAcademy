@@ -1,3 +1,4 @@
+/*
 package D20220720;
 
 public class ClassesHuman3312 {
@@ -15,3 +16,4 @@ public class ClassesHuman3312 {
   this.favoriteSport = favoriteSport;
     }
 }
+*/
