@@ -10,6 +10,10 @@ public class HumanClass {
     }
 
     public static class Human {
+        private int age;
+        private String name;
+        private String secondName;
+        private String favoriteSport;
         public Human() {
             System.out.println("From 1");
         }
@@ -28,10 +32,5 @@ public class HumanClass {
             this.name = name;
             this.secondName = secondName;
         }
-
-        private int age;
-        private String name;
-        private String secondName;
-        private String favoriteSport;
     }
 }
