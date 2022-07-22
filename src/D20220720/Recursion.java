@@ -1,5 +1,7 @@
 package D20220720;
 
+import java.util.Iterator;
+
 public class Recursion {
     public static void main(String[] args) {
         counter(3);
@@ -12,5 +14,6 @@ public class Recursion {
         System.out.println(n);
 
         counter(n-1);
+        Iterator
     }
 }
