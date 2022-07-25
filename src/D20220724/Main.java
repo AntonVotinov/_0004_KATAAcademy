@@ -1,5 +1,7 @@
 package D20220724;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         Circle circle = new Circle(
@@ -18,6 +20,7 @@ public class Main {
 
         Shape maxShape = findShapeWithMaxArea(shapes);
         System.out.println("Shape with max area: " + maxShape);
+        Scanner sc = new Scanner(System.in);
     }
 
     private static void printArrayElements(Object[] objects) {
