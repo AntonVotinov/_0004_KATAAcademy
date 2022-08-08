@@ -5,6 +5,13 @@ import java.util.Objects;
 public class Pereopredeleniye {
     Double a;
 
+    /**
+     * Returns something to somewhere
+     *
+     * While My children are in Dankov
+     * I'm studying at home
+     */
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
