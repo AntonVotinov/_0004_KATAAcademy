@@ -6,20 +6,24 @@ public class DogExceptions {
         boolean isLeashPutOn;
         boolean isMuzzlePutOn;
 
-    public DogExceptions(String name, boolean isCollarPutOn, boolean isLeashPutOn, boolean isMuzzlePutOn) {
+    public DogExceptions(String name) {
         this.name = name;
-        this.isCollarPutOn = isCollarPutOn;
-        this.isLeashPutOn = isLeashPutOn;
-        this.isMuzzlePutOn = isMuzzlePutOn;
     }
 
 
 
         public static void main(String[] args) throws DogIsNotReadyException {
-            DogExceptions dog1 = new DogExceptions("Puf1",true,true,true);
-            dog1.walk();
-            DogExceptions dog2 = new DogExceptions("Puf2",true,false,true);
-            dog2.walk();
+            DogExceptions dog1 = new DogExceptions("Puf1");
+            dog1.putCollar();
+
+            dog1.putMuzzle();
+            try {
+                dog1.walk();
+            } catch (DogIsNotReadyException e) {
+                System.out.println(e.getMessage());
+                System.out.println("Проверяем снаряжение! Ошейник надет? " + dog1.isCollarPutOn + "\r\n Поводок надет? "
+                        + dog1.isLeashPutOn + "\r\n Намордник надет? " + dog1.isMuzzlePutOn);
+            }
 
         }
 
